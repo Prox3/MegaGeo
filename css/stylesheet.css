@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+body 
+{
+	margin:0; 
+	padding:0; 
+	text-align:center; /* hack para o IE */
+	background-image: url(../images/total-bg.png);
+}
+
+.bg-tudo
+{
+position:absolute;
+left:0px;
+top:0px;
+z-index:-1;
+margin-left: 175px;
+width: 1000px;
+}
+.fill
+{
+	width:	700px;
+}
+#tudo 
+{
+	width: 1000px; 
+	margin:0 auto; 
+	text-align:left; /* "remédio" para o hack do IE */ 
+}
+
+#conteudo 
+{
+padding-top: 1px;
+margin-top: -1px;
+}
+.fit-logo
+{
+	margin-top: 206px;
+}
+	
+.complete
+{
+	background-image:url(../images/complete-bg.png);
+    background-repeat:repeat-y;height: 1648px;width: 211px;
+}
+
+.complete-rest
+{
+	background-image: url(../images/complete-bg.png);
+	background-repeat: repeat;
+	height: 1375px;
+	width: 996px;
+}
+
+.continuaseta
+{
+	width: 120px;
+	margin-top: -5px;
+}
+.header
+{
+	background-image: url(../images/header-bg.png);
+	background-repeat: repeat-x;
+	height: 34px;
+	width:inherit;
+	position:fixed;
+	width:1000px;
+}
+
+.section1
+{
+	margin-left: 260px;
+	margin-top: 50px;
+}
+.section2
+{
+	margin-left: 260px;
+}
+
+
+.left
+{
+	float: left;	
+}
+.menu-text
+{
+	color: #908f8f;
+	font-family: "orator Std", Trebuchet MS, Helvetica, sans-serif;
+	cursor: pointer;
+}
+.menu-item
+{ 
+	float:left;
+	margin: 0 30px 0px 0;
+}
+
+.logo-menu
+{
+	float:left;	
+	margin-right: 50px;
+}
+
+.texto
+{
+	font-family: "Helvetica Neue", Trebuchet MS, Helvetica, sans-serif;
+
+	font-size: 12pt;
+}
+.size10
+{
+	font-size:10pt;
+}
+.empresa-color
+{
+	color:#e77843;
+}
+.empresa-align
+{
+	width: 760px;
+	float: left;
+	margin-left: -35px;
+}
+.bold
+{
+	font-weight:bold;
+}
+#equipeHolder
+{
+	margin-top: -3px;
+}
+
+#boxHolder
+{
+	width: 725px;
+	height: 93px;
+	float: left;
+}
+
+.inicioSetaEmpresa
+{	
+	background-image: url(../images/inicioseta-empresa.png);
+	background-repeat: repeat-x;
+	color: #FFF;
+	width: 111px;
+	padding: 1px 15px;
+	float: left;
+	height: 22px;
+	margin-left: -35px;
+}
+.fimSetaEmpresa
+{	
+	background-image: url(../images/fimseta-empresa.png);
+	background-repeat: no-repeat;
+	height: 22px;
+	float: left;
+	width: 13px;
+}
+
+.box-eng
+{
+	width: 232px;
+	height: 65px;
+	margin-left: -35px;
+	background-color: #ececec;
+	padding: 0px 15px;
+}
+
+.inicioSetaEquipamentos
+{
+	background-image: url(../images/iniciosetaequip.png);
+	background-repeat: repeat-x;
+	color: #FFF;
+	width: 111px;
+	padding: 1px 15px;
+	float: left;
+	height: 22px;
+	margin-left: -35px;
+}
+
+.fimSetaEquipamentos
+{	
+	background-image: url(../images/fimsetaequip.png);
+	background-repeat: no-repeat;
+	height: 22px;
+	float: left;
+	width: 13px;
+}
+
+.boxEquipamentos
+{
+	width: 725px;
+	float: left;	
+}
+
+#fotosEquip
+{
+	width: 736px;
+	float: left;
+	margin-left: -35px;
+	margin-bottom: 55px;
+}
+.distanciaFoto
+{
+	margin-right: 15px;	
+}
+
+.inicioSetaObras
+{
+	background-image: url(../images/inicioSetaObra.png);
+	background-repeat:repeat-x;
+	color: #FFF;
+	width: 64px;
+	padding: 1px 15px;
+	float: left;
+	height: 22px;
+	margin-left: -35px;
+}
+
+.fimSetaObras
+{
+	background-image: url(../images/fimSetaObra.png);
+	background-repeat: no-repeat;
+	height: 22px;
+	float: left;
+	width: 13px;
+}
+
+.obraSpacing
+{
+	margin-bottom: 11px;
+	margin-left: -35px;
+	
+}
+.obraFirst
+{
+	margin-top:6px;	
+}
+
+.inicioSetaFAQ
+{
+	background-image: url(../images/inicioSetaFAQ.png);
+	background-repeat:repeat-x;
+	color: #FFF;
+	width: 60px;
+	padding: 1px 15px;
+	float: left;
+	height: 22px;
+	margin-left: -35px;
+}
+.fimSetaFAQ
+{
+	background-image: url(../images/fimSetaFAQ.png);
+	background-repeat: no-repeat;
+	height: 22px;
+	float: left;
+	width: 13px;
+}
+.espacoHeader
+{
+	margin-bottom: 55px;	
+}
+
+.questao
+{
+	background-color: #d9d6d4;
+	color: #474747;
+	padding-left: 10px;
+	margin-top: 10px;
+	
+}
+.resposta
+{
+	padding-left: 10px;
+}
+
+.adjustQuestion
+{
+	margin-left: -35px;
+	padding-left: 5px;
+	width: 727px;
+}
+
+
+
+.inicioSetaCliente
+{
+	background-image: url(../images/inicioSetaCliente.png);
+	background-repeat:repeat-x;
+	color: #FFF;
+	width: 60px;
+	padding: 1px 15px;
+	float: left;
+	height: 22px;
+	margin-left: -35px;
+}
+.fimSetaCliente
+{
+	background-image: url(../images/fimSetaCliente.png);
+	background-repeat: no-repeat;
+	height: 22px;
+	float: left;
+	width: 13px;
+}
+.boxCliente
+{
+	background-color: #e3e3e3;
+}
+.boxClienteHolder
+{
+	width: 740px;
+margin-left: -35px;
+margin-top: 10px;
+}
+
+.footer {
+	background-image: url(../images/footer.png);	
+}
