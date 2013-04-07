@@ -470,3 +470,11 @@ color:#474747;
 .widthBoxTitulo{
 	width:140px;
 }
+
+.ui-datepicker {
+	font-size: 11px !important;
+}
+
+.ui-tooltip{
+padding:0px !important;
+}

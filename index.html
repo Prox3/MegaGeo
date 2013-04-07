@@ -4,80 +4,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>MegaGeo</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery.ScrollTo-min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-	$(document).ready(function () {
-		//$("#servicos").click(function () {
-		//    $(document).scrollTo({ top: 304, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
-		//});    
-		/*
-		EXAMPLE ONE
-		*/
-		var $el, leftPos, newWidth, auxClick;
-		auxClick = 0;
-		
-		/* Cache it */
-		var $magicLine = $("#magic-line");
-		var pLeft = ($(".current_page_item a").position().left + (($(".current_page_item a").width()/2)-10));
-		$magicLine
-			.css("left",pLeft )
-			.data("origLeft", $magicLine.position().left);
-		
-		$("#header ul li").find("a").hover(function() 
-		{
-				auxClick = 0;
-				$el = $(this);
-				leftPos = $el.position().left + (($el.width()/2)-10) ;
-				
-				$magicLine.stop().animate({
-					left: leftPos,
-				});
-				
-			}, function() {
-				if(auxClick == 0){
-					$magicLine.stop().animate({
-					left: $magicLine.data("origLeft")
-				});   
-			}
-		});
-		
-		$("#header ul li").find("a").click(function() 
-		{
-			auxClick = 1;
-			$el = $(this);
-			leftPos = $el.position().left + (($el.width()/2)-10) ;
-			
-			$magicLine
-				.css("left",leftPos )
-				.data("origLeft", $magicLine.position().left);
-			
-			$magicLine.stop().animate({
-				left: leftPos,
-			});   
-		});
-		
-		
-		var aux = 0;
-    	$('div.accordionButton').click(function () {
-        	var click1 = $(this).children("span").html().split('.');
-        	if (click1[0] != aux) {
-            	$('div.accordionContent').slideUp('normal');
-            	$(this).next().slideDown('normal');
-            	aux = click1[0];
-        	}
-        	else {
-            	$('div.accordionContent').slideUp('normal');
-            	aux = 0;
-	        }
-    	});
-    	$("div.accordionContent").hide();
-		
-		if(navigator.userAgent.indexOf('Mac') > 0){
-			$("#content .titulo .boxTitulo").css("padding","7px 5px 6px 15px");
-		}
-	});
-	</script>
+    <link rel="Stylesheet" href="css/jquery.qtip.css" />
+    <link rel="Stylesheet" href="css/smoothness/jquery-ui-1.10.2.custom.css" />
+	<script src="js/script.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.qtip.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery.alphanumeric.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="js/jquery.ScrollTo-min.js"></script>
+    <script type="text/javascript" src="js/Commons/common.js"></script>
+    <script type="text/javascript" src="js/ViewModels/indexViewModel.js"></script>
 </head>
 <body>
 <div id="tudo">
@@ -326,63 +263,65 @@
                     </div>
                     <div id="formOrcamento">
                     	<div class="boxTitulo"><p>Solicite um Orçamento</p></div>
-                        <div class="dadosForm">
-                            <div class="nome EspacoEntreAccordion">
-                            	<p><label>Nome:</label></p>
-                            	<p><input type="text" id="txtNome" name="txtNome" value=""/></p>
-                            </div>
-                            
-                            <div class="telEmail EspacoEntreAccordion">
-                            	<div class="tel left">
-                                    <p><label>Telefone:</label></p>
-                                    <p><input type="text" id="txtTelefone" name="txtTelefone" value=""/></p>
+                        <form id="form1" action="#" method="post">
+                            <div class="dadosForm">
+                                <div class="nome EspacoEntreAccordion">
+                                    <p><label>Nome:</label></p>
+                                    <p><input type="text" id="txtNome" name="txtNome" value=""/></p>
                                 </div>
-                                <div class="email right">
-                                    <p><label>E-mail:</label></p>
-                                    <p><input type="text" id="txtEmail" name="txtEmail" value=""/></p>
+                                
+                                <div class="telEmail EspacoEntreAccordion">
+                                    <div class="tel left">
+                                        <p><label>Telefone:</label></p>
+                                        <p><input type="text" id="txtTelefone" name="txtTelefone" value=""/></p>
+                                    </div>
+                                    <div class="email right">
+                                        <p><label>E-mail:</label></p>
+                                        <p><input type="text" id="txtEmail" name="txtEmail" value=""/></p>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="empresa EspacoEntreAccordion">
-                            	<p><label>Empresa:</label></p>
-                            	<p><input type="text" id="txtEmpresa" name="txtEmpresa" value=""/></p>
-                            </div>
-                            
-                            <hr class="divisor EspacoEntreAccordion" />
-                            
-                            <div class="localObra EspacoEntreAccordion">
-                            	<p><label>Local da Obra:</label></p>
-                            	<p><input type="text" id="txtLocalObra" name="txtLocalObra" value=""/></p>
-                            </div>
-                            
-                            <div class="tipoObra EspacoEntreAccordion">
-                            	<p><label>Tipo da Obra:</label></p>
-                            	<p><input type="text" id="txtTipoObra" name="txtTipoObra" value=""/></p>
-                            </div>
-                            
-                            <div class="estacas EspacoEntreAccordion">
-                            	<p><label>Estacas Hélice Contínua:</label></p>
-                            	<p>
-                                <label>Quantidade:</label>
-                                <input type="text" id="txtQtdEstacas" name="txtQtdEstacas" value=""/>
-                                <label>Diâmetro:</label>
-                                <input type="text" id="txtDiametroEstacas" name="txtDiametroEstacas" value=""/>
-                                <label>Profundidade:</label>
-                                <input type="text" id="txtProfundidadeEstacas" name="txtProfundidadeEstacas" value=""/>
-                                </p>
-                            </div>
-                            
-                            <div class="prevEnviar EspacoEntreAccordion">
-                            	<div class="prev left">
-                                    <p><label>Previsão de Início:</label></p>
-                                    <p><input type="text" id="txtPrevisao" name="txtPrevisao" value=""/></p>
+                                
+                                <div class="empresa EspacoEntreAccordion">
+                                    <p><label>Empresa:</label></p>
+                                    <p><input type="text" id="txtEmpresa" name="txtEmpresa" value=""/></p>
                                 </div>
-                                <div class="enviar right">
-                                    <p><input type="button" id="txtEnviar" name="txtEnviar" class="enviarBtn" value="enviar"/></p>
+                                
+                                <hr class="divisor EspacoEntreAccordion" />
+                                
+                                <div class="localObra EspacoEntreAccordion">
+                                    <p><label>Local da Obra:</label></p>
+                                    <p><input type="text" id="txtLocalObra" name="txtLocalObra" value=""/></p>
                                 </div>
+                                
+                                <div class="tipoObra EspacoEntreAccordion">
+                                    <p><label>Tipo da Obra:</label></p>
+                                    <p><input type="text" id="txtTipoObra" name="txtTipoObra" value=""/></p>
+                                </div>
+                                
+                                <div class="estacas EspacoEntreAccordion">
+                                    <p><label>Estacas Hélice Contínua:</label></p>
+                                    <p>
+                                    <label>Quantidade:</label>
+                                    <input type="text" id="txtQtdEstacas" name="txtQtdEstacas" value=""/>
+                                    <label>Diâmetro:</label>
+                                    <input type="text" id="txtDiametroEstacas" name="txtDiametroEstacas" value=""/>
+                                    <label>Profundidade:</label>
+                                    <input type="text" id="txtProfundidadeEstacas" name="txtProfundidadeEstacas" value=""/>
+                                    </p>
+                                </div>
+                                
+                                <div class="prevEnviar EspacoEntreAccordion">
+                                    <div class="prev left">
+                                        <p><label>Previsão de Início:</label></p>
+                                        <p><input type="text" id="txtPrevisao" name="txtPrevisao" value=""/></p>
+                                    </div>
+                                    <div class="enviar right">
+                                        <p><input type="button" id="txtEnviar" name="txtEnviar" class="enviarBtn" value="enviar"/></p>
+                                    </div>
+                                </div>
+                                
                             </div>
-                            
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -404,34 +343,6 @@
             </div>
       	</div>
         <!-- Fim Footer -->
-               
-      
-      <!-- Fim Section 4 FAQ 
-      <!-- Inicio Section 5 Clientes 
-       <div id="ClienteHolder" class="section2 ">
-	       <div id="setaCliente">
-        	<div class="inicioSetaCliente texto size10 bold"> CLIENTES</div>
-            <div class="fimSetaCliente"></div>
-   		   </div>
-           <div class="boxClienteHolder left">
-	           <div class="boxCliente texto left">
-	           	• ENAC Empreendimentos, Construção e Comércio Ltda. <br />
-				• Construtora Guarany<br />
-				• Queiroz Galvão Desenvolvimento Imobiliário<br />
-				• Rossi Residencial AS<br />
-				• HS Tressoldi Incorporações Ltda<br />
-				• Construcamp obras e projetos Ltda<br />
-				• HM Engenharia<br />
-				• J.Fonseca Construtora<br />
-				• Construtora Nogueira Porto
-	           </div>
-           </div>
-       </div>
-      <!-- Fim Section 5 Clientes -->
-      <!-- Inicio Section 6 Contato -->
-      <!-- Fim Section 6 Contato -->
-      
-      
    	</div><!-- fim conteudo -->
 </div><!-- fim tudo -->
 </body>
