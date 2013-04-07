@@ -8,7 +8,13 @@ $(document).ready(function () {
 	definicaoFormValidacao();
 	calendario();
 	enviarOrcamento();
+	prettyPhoto();
 });
+
+function prettyPhoto(){
+	$("a[rel^='prettyPhoto[Equipamentos]']").prettyPhoto({ social_tools:'' });
+	$("a[rel^='prettyPhoto[Obras]']").prettyPhoto({ social_tools:'' });
+}
 
 function enviarOrcamento(){
 	$("#txtEnviar").click(function(){

@@ -47,7 +47,10 @@
 	
 	$mail->AddReplyTo("contato@prox3.com.br","PROX3");
 	
-	$mail->Subject    = "[MegaGeo] Solicitacao de Orcamento";
+	$assunto = '[MegaGeo] Solicitação de Orçamento';
+	$assunto_codificado = sprintf('=?%s?%s?%s?=', 'UTF-8', 'B', base64_encode($assunto));
+	
+	$mail->Subject    = $assunto_codificado;
 	
 	//$mail->AltBody    = "Caso n&atilde;o esteja visualizando este e-mail, acesse esse link:"; // optional, comment out and test
 	
