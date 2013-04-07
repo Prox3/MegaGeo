@@ -15,21 +15,73 @@ function enviarOrcamento(){
 		if (!$('#form1').valid()) {
             return;
         }
-		$('#form1').reset();
-		abrirModal();
+		
+		var form = $('#form1');
+		var nome = form.find('#txtNome')
+		var empresa = form.find('#txtEmpresa');
+		var telefone = form.find('#txtTelefone');
+		var email = form.find('#txtEmail');
+		var local = form.find('#txtLocalObra');
+		var tipoObra = form.find('#txtTipoObra');
+		var qtd = form.find('#txtQtdEstacas');
+		var diametro = form.find('#txtDiametroEstacas');
+		var profundidade = form.find('#txtProfundidadeEstacas');
+		var previsao = form.find('#txtPrevisao');
+		
+		$.ajax({
+			url: 'send_message.php',
+			type: 'POST',
+			data: { nome: nome.val(), 
+					empresa: empresa.val(), 
+					telefone: telefone.val(), 
+					email: email.val(), 
+					local: local.val(), 
+					tipoObra: tipoObra.val(), 
+					qtd: qtd.val(), 
+					diametro: diametro.val(), 
+					profundidade: profundidade.val(), 
+					previsao: previsao.val()
+					},
+			success:function(data){
+				alert(data);
+				if(data != 'ok'){
+					$('#form1').reset();
+					abrirModalSucesso();
+				}
+				else{
+					abrirModalError();
+				}
+				
+			},
+			error:function(jqXHR, textStatus, errorThrown ){
+				alert(textStatus);
+			}
+		});
 	});
 	
 	$("#boxSucessoEnvio .close").click(function(){
-		fecharModal();
+		fecharModalSucesso();
+	});
+	
+	$("#boxErrorEnvio .close").click(function(){
+		fecharModalError();
 	});
 }
 
-function abrirModal(){
+function abrirModalSucesso(){
 	$("#boxSucessoEnvio, .backLightbox").show();
 }
 
-function fecharModal(){
+function fecharModalSucesso(){
 	$("#boxSucessoEnvio, .backLightbox").hide();
+}
+
+function abrirModalError(){
+	$("#boxErrorEnvio, .backLightbox").show();
+}
+
+function fecharModalError(){
+	$("#boxErrorEnvio, .backLightbox").hide();
 }
 
 function calendario(){
@@ -125,9 +177,35 @@ function somenteNumeros(){
 }
 
 function navegacaoMenu(){
-	//$("#servicos").click(function () {
-	//    $(document).scrollTo({ top: 304, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
-	//}); 
+	$(".menuEmpresa").click(function () {
+		var posLeft = 0;
+	    $(document).scrollTo({ top: posLeft, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
+		return false;
+	}); 
+	
+	$(".menuObras").click(function () {
+		var posLeft = ($("#boxObras").position().top - 60);
+	    $(document).scrollTo({ top: posLeft, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
+		return false;
+	}); 
+	
+	$(".menuFAQ").click(function () {
+		var posLeft = ($("#boxFAQ").position().top - 60);
+	    $(document).scrollTo({ top: posLeft, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
+		return false;
+	}); 
+	
+	$(".menuClientes").click(function () {
+		var posLeft = ($("#boxClientes").position().top - 60);
+	    $(document).scrollTo({ top: posLeft, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
+		return false;
+	}); 
+	
+	$(".menuContato").click(function () {
+		var posLeft = ($("#boxContato").position().top - 60);
+	    $(document).scrollTo({ top: posLeft, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
+		return false;
+	}); 
 }
 
 function efeitosMenu(){
