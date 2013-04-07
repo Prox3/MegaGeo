@@ -17,7 +17,22 @@
 	$previsao = $_POST['previsao'];
 	//Fim Variaveis para envio
 	
-	$body ='[CORPO DO E-MAIL]';
+	$body = '<h1>Solicitação de Orçamento</h1>';
+	$body .='<br/>';
+	$body .='<p>Nome: '. $nome .'</p>';
+	$body .='<p>Empresa: '. $empresa .'</p>';
+	$body .='<p>Telefone: '. $telefone .'</p>';
+	$body .='<p>E-mail: '. $email .'</p>';
+	$body .='<p>Loca da Obra: '. $local .'</p>';
+	$body .='<p>Tipo da Obra: '. $tipoObra .'</p>';
+	$body .='<br/>';
+	$body .='<p><b>Estacas Hélice Contínua:</b></p>';
+	$body .='<p>Quantidade: '. $qtd .'</p>';
+	$body .='<p>Diâmentro: '. $diametro .'</p>';
+	$body .='<p>Profundidade: '. $profundidade .'</p>';
+	$body .='<br/>';
+	$body .='<p><b>Previsão de Início</b></p>';
+	$body .='<p>'. $previsao .'</p>';
 	
 	$mail->IsSMTP(); // telling the class to use SMTP
 	$mail->Host       = "smtp.gmail.com"; // SMTP server
@@ -32,18 +47,17 @@
 	
 	$mail->AddReplyTo("contato@prox3.com.br","PROX3");
 	
-	$mail->Subject    = "[MegaGeo] Solicitação de Orçamento";
+	$mail->Subject    = "[MegaGeo] Solicitacao de Orcamento";
 	
 	//$mail->AltBody    = "Caso n&atilde;o esteja visualizando este e-mail, acesse esse link:"; // optional, comment out and test
 	
 	$mail->MsgHTML($body);
 	
-	$mail->AddAddress($email,$nome);
+	$mail->AddAddress('contato@prox3.com.br','PROX3');
 
 	if(!$mail->Send()) {
 		echo "error";
 	} else {
-		$mail->Send();
 		echo "ok";
 	}
 ?>

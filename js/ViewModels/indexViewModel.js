@@ -42,9 +42,12 @@ function enviarOrcamento(){
 					profundidade: profundidade.val(), 
 					previsao: previsao.val()
 					},
+			beforeSend:function(){
+				$(".backLightbox, .loading").show();
+			},
 			success:function(data){
-				alert(data);
-				if(data != 'ok'){
+				$(".loading").hide();
+				if(data == 'ok'){
 					$('#form1').reset();
 					abrirModalSucesso();
 				}
@@ -173,7 +176,6 @@ function mascarasPagina(){
 
 function somenteNumeros(){
 	$('#txtQtdEstacas, #txtDiametroEstacas, #txtProfundidadeEstacas').numeric();
-	$('#txtNome, #txtEmpresa, #txtLocalObra, #txtTipoObra').alphanumeric();
 }
 
 function navegacaoMenu(){
