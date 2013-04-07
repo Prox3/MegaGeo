@@ -134,6 +134,10 @@ ul li {
 	height:1000px;
 	margin:50px 0px 25px 0px;
 }
+
+#content .content{
+padding:5px 0px 5px 0px;
+}
 /* @End Content Style*/
 
 /* Box Empresa/Equipamentos Style*/
@@ -174,6 +178,13 @@ ul li {
 #boxEmpresa .titulo .arrowsTitulo, #boxEquipamentos .titulo .arrowsTitulo{
 	border-left-color:#e77843 !important;
 }
+
+#boxEquipamentos .content img{
+	margin-right:20px;
+}
+#boxEquipamentos .content img:last-child{
+	margin-right:0px;
+}
 /* @End Box Empresa/Equipamentos Style*/
 
 /* Box Obras Style*/
@@ -187,6 +198,14 @@ ul li {
 
 #boxObras .titulo .arrowsTitulo{
 	border-left-color:#2b4d8b !important;
+}
+
+#boxObras .content img{
+	margin-bottom:10px;
+}
+
+#boxObras .content img:last-child{
+	margin-bottom:0px;
 }
 /* @End Box Obras Style*/
 
