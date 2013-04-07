@@ -25,6 +25,18 @@ body
 {
 }
 
+label{
+	color:#969494;
+	font-size:12pt;
+	font-weight:600;
+}
+
+input[type=text]{
+	border:0px;
+	padding:5px;
+	outline:none;
+}
+
 a{
 	font-family:"orator Std", "trebuchet MS", sans-serif;
 	text-decoration:none;
@@ -334,6 +346,71 @@ padding:5px 0px 5px 0px;
 	
 }
 /* @End Box Contato Style*/
+
+/* Box Formulario Orçamento*/
+.dadosForm{
+	display:table;
+	height:auto;
+	padding:0px 15px 0px 15px;
+	width: 753px;
+}
+
+.dadosForm .nome input[type=text], .dadosForm .empresa input[type=text],
+.dadosForm .localObra input[type=text], .dadosForm .tipoObra input[type=text]
+{
+	width:743px;
+}
+
+.dadosForm .telEmail{
+	display:table;
+	width: inherit;
+}
+
+.dadosForm .telEmail input[type=text]
+{
+	width:360px;
+}
+
+.dadosForm .estacas input[type=text]
+{
+	width:40px;
+}
+
+.dadosForm .prevEnviar input[type=text]
+{
+	width:200px;
+}
+
+/* @End Box Formulario Orçamento*/
+.enviarBtn{
+	cursor:pointer;
+	border:2px solid #e72c2d;
+	height:30px;
+	width:70px;
+	display:table;
+	color:#fff;
+	text-transform:uppercase;
+	background:url(../images/bgBtnEnviar.png) repeat-x;
+	margin-top: 20px;
+}
+
+.enviarBtn:hover{
+	background:#971a1b;
+	color:#c91a22;
+}
+
+.enviarBtn:active{
+	background:#c0bebe;
+	border:2px solid #c0bebe;
+	color:#dddbdb;
+}
+
+.divisor{
+	border:0px;
+	width:inherit;
+	height:3px;
+	background:#dbdada;
+}
 
 .EspacoEntreAccordion{
 	margin-bottom:15px;

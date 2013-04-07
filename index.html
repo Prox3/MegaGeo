@@ -325,9 +325,64 @@
                         </ul>
                     </div>
                     <div id="formOrcamento">
-                    	<div>
                     	<div class="boxTitulo"><p>Solicite um Orçamento</p></div>
-                    </div>
+                        <div class="dadosForm">
+                            <div class="nome EspacoEntreAccordion">
+                            	<p><label>Nome:</label></p>
+                            	<p><input type="text" id="txtNome" name="txtNome" value=""/></p>
+                            </div>
+                            
+                            <div class="telEmail EspacoEntreAccordion">
+                            	<div class="tel left">
+                                    <p><label>Telefone:</label></p>
+                                    <p><input type="text" id="txtTelefone" name="txtTelefone" value=""/></p>
+                                </div>
+                                <div class="email right">
+                                    <p><label>E-mail:</label></p>
+                                    <p><input type="text" id="txtEmail" name="txtEmail" value=""/></p>
+                                </div>
+                            </div>
+                            
+                            <div class="empresa EspacoEntreAccordion">
+                            	<p><label>Empresa:</label></p>
+                            	<p><input type="text" id="txtEmpresa" name="txtEmpresa" value=""/></p>
+                            </div>
+                            
+                            <hr class="divisor EspacoEntreAccordion" />
+                            
+                            <div class="localObra EspacoEntreAccordion">
+                            	<p><label>Local da Obra:</label></p>
+                            	<p><input type="text" id="txtLocalObra" name="txtLocalObra" value=""/></p>
+                            </div>
+                            
+                            <div class="tipoObra EspacoEntreAccordion">
+                            	<p><label>Tipo da Obra:</label></p>
+                            	<p><input type="text" id="txtTipoObra" name="txtTipoObra" value=""/></p>
+                            </div>
+                            
+                            <div class="estacas EspacoEntreAccordion">
+                            	<p><label>Estacas Hélice Contínua:</label></p>
+                            	<p>
+                                <label>Quantidade:</label>
+                                <input type="text" id="txtQtdEstacas" name="txtQtdEstacas" value=""/>
+                                <label>Diâmetro:</label>
+                                <input type="text" id="txtDiametroEstacas" name="txtDiametroEstacas" value=""/>
+                                <label>Profundidade:</label>
+                                <input type="text" id="txtProfundidadeEstacas" name="txtProfundidadeEstacas" value=""/>
+                                </p>
+                            </div>
+                            
+                            <div class="prevEnviar EspacoEntreAccordion">
+                            	<div class="prev left">
+                                    <p><label>Previsão de Início:</label></p>
+                                    <p><input type="text" id="txtPrevisao" name="txtPrevisao" value=""/></p>
+                                </div>
+                                <div class="enviar right">
+                                    <p><input type="button" id="txtEnviar" name="txtEnviar" class="enviarBtn" value="enviar"/></p>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
