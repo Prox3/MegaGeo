@@ -56,6 +56,26 @@
 				left: leftPos,
 			});   
 		});
+		
+		
+		var aux = 0;
+    	$('div.accordionButton').click(function () {
+        	var click1 = $(this).children("span").html().split('.');
+        	if (click1[0] != aux) {
+            	$('div.accordionContent').slideUp('normal');
+            	$(this).next().slideDown('normal');
+            	aux = click1[0];
+        	}
+        	else {
+            	$('div.accordionContent').slideUp('normal');
+            	aux = 0;
+	        }
+    	});
+    	$("div.accordionContent").hide();
+		
+		if(navigator.userAgent.indexOf('Mac') > 0){
+			$("#content .titulo .boxTitulo").css("padding","7px 5px 6px 15px");
+		}
 	});
 	</script>
 </head>
@@ -94,10 +114,12 @@
                     </div>
                 </div>
                 <div class="content">
-                	<p>Eng° Leandro Tomio Noguchi</p>
-                    <p>Eng° Leandro Tomio Noguchi</p>
-                    <p>Eng° Leandro Tomio Noguchi</p>
-                    <p>Eng° Leandro Tomio Noguchi</p>
+                	<div>
+                        <p>Eng° Leandro Tomio Noguchi</p>
+                        <p>Eng° Leandro Tomio Noguchi</p>
+                        <p>Eng° Leandro Tomio Noguchi</p>
+                        <p>Eng° Leandro Tomio Noguchi</p>
+                    </div>
                 </div>
             </div>
        		<!-- Fim Section 1 Empresa -->
@@ -147,6 +169,116 @@
                     </div>
                 </div>
                 <div class="content">
+                	<div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>1. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>2. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>3. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>4. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>5. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>6. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>7. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>8. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>9. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="EspacoEntreAccordion">
+                        <div class="accordionButton">
+                            <span>10. Say goodbye to the halls and the classes?</span></div>
+                        <div class="accordionContent" style="display: block;">
+                            <div class="divContentAccordio">
+                                <p>
+                                    Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
        		<!-- Fim Section 4 FAQ -->
@@ -161,6 +293,17 @@
                     </div>
                 </div>
                 <div class="content">
+                	<ul>
+                    	<li>• ENAC Empreendimentos, Construção e Comércio Ltda.</li>
+                        <li>• Construtora Guarany</li>
+                        <li>• Queiroz Galvão Desenvolvimento Imobiliário</li>
+                        <li>• Rossi Residencial AS</li>
+                        <li>• HS Tressoldi Incorporações Ltda.</li>
+                        <li>• Construcamp obras e projetos Ltda.</li>
+                        <li>• HM Engenharia</li>
+                        <li>• J.Fonseca Construtora</li>
+                        <li>• Construtora Nogueira Porto</li>
+                    </ul>
                 </div>
             </div>
        		<!-- Fim Section 5 Clientes  -->
@@ -175,6 +318,17 @@
                     </div>
                 </div>
                 <div class="content">
+                	<div id="contatos">
+                        <ul>
+                            <li><strong>Telefones:</strong> 00 0000-0000  |  00 0000-0000</li>
+                            <li><strong>E-mail:</strong> <a href="#" target="_blank">contato@contato.com.br</a></li>
+                        </ul>
+                    </div>
+                    <div id="formOrcamento">
+                    	<div>
+                    	<div class="boxTitulo"><p>Solicite um Orçamento</p></div>
+                    </div>
+                    </div>
                 </div>
             </div>
        		<!-- Fim Section 6 Contato  -->
@@ -196,61 +350,7 @@
       	</div>
         <!-- Fim Footer -->
                
-      <!-- Inicio Section 4 FAQ -
-      <div id="FAQHolder" class="section2 ">
-      	<div id="setaFAQ">
-        	<div class="inicioSetaFAQ texto size10 bold"> FAQ</div>
-            <div class="fimSetaFAQ"></div>
-        </div>
-        <div id="QuestionsHolder" class="left adjustQuestion">
-        	<div class="questao texto bold">1. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">2. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">3. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">4. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">6. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">7. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">8. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">9. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto ">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-            <div class="questao texto bold">10. Say goodbye to the halls and the classes?</div>
-            <div class="resposta texto espacoHeader">
-            Say hello to a job and the taxes. The weekends with old friends Spilling into 9 to 5 routine Tell me how you feel over and done with Like your life is a map with no compass to guide At the bar drinkin' way too much We sing along to "Forever Young"
-
-            </div>
-         </div>
-        
-      </div>
+      
       <!-- Fim Section 4 FAQ 
       <!-- Inicio Section 5 Clientes 
        <div id="ClienteHolder" class="section2 ">
