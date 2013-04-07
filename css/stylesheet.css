@@ -458,6 +458,12 @@ color:#474747;
 	vertical-align:middle;
 }
 
+.verticalAlign63px{
+	display:table-cell;
+	height:63px;
+	vertical-align:middle;
+}
+
 .arrowsTitulo{
 	width: 0;
 	height: 0;
@@ -477,4 +483,63 @@ color:#474747;
 
 .ui-tooltip{
 padding:0px !important;
+}
+
+.backLightbox{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ededed;
+opacity: .6;
+z-index: 21000;
+display: none;
+}
+
+.boxFlutuante {
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left:-179px;
+margin-top:-63px;
+z-index: 22003;
+box-shadow: 0px 0px 35px -10px #000;
+}
+
+#boxSucessoEnvio{
+display: none;
+height: 126px;
+width: 358px;
+}
+
+#boxSucessoEnvio div{
+	display:table;
+	height:63px;
+	width:inherit;
+}
+
+#boxSucessoEnvio p{
+	color:#fff;
+	text-align:center;
+}
+
+#boxSucessoEnvio .titulo{
+	background:#721116 url(../images/checkedForm.png) no-repeat 25px 20px;
+	text-transform:uppercase;
+	font-weight:600;
+	font-size: 8pt;
+}
+
+#boxSucessoEnvio .content{
+	background:#991c22;
+	font-size: 11px;
+}
+
+#boxSucessoEnvio .close{
+	cursor:pointer;
+	position:absolute;
+	width:18px;
+	height: 18px;
+	right: 0px;
 }

@@ -7,7 +7,30 @@ $(document).ready(function () {
 	mascarasPagina();
 	definicaoFormValidacao();
 	calendario();
+	enviarOrcamento();
 });
+
+function enviarOrcamento(){
+	$("#txtEnviar").click(function(){
+		if (!$('#form1').valid()) {
+            return;
+        }
+		$('#form1').reset();
+		abrirModal();
+	});
+	
+	$("#boxSucessoEnvio .close").click(function(){
+		fecharModal();
+	});
+}
+
+function abrirModal(){
+	$("#boxSucessoEnvio, .backLightbox").show();
+}
+
+function fecharModal(){
+	$("#boxSucessoEnvio, .backLightbox").hide();
+}
 
 function calendario(){
 	$("#txtPrevisao").datepicker({
@@ -67,11 +90,11 @@ function definicaoFormValidacao() {
     });
 	
 	local.rules('add', { required: true,
-        messages: { required: 'Local da obra obrigatório.' }
+        messages: { required: 'Local obrigatório.' }
     });
 	
 	tipoObra.rules('add', { required: true,
-        messages: { required: 'Tipo da obra obrigatório.' }
+        messages: { required: 'Tipo obrigatório.' }
     });
 	
 	qtd.rules('add', { required: true,
@@ -89,14 +112,6 @@ function definicaoFormValidacao() {
 	previsao.rules('add', { required: true,
         messages: { required: 'Previsão de início obrigatório.' }
     });
-	
-	$("#txtEnviar").click(function(){
-		if (!$('#form1').valid()) {
-            return;
-        }
-		
-		$('#form1').reset();
-	});
 }
 
 function mascarasPagina(){
