@@ -8,9 +8,36 @@
     <script src="js/jquery.ScrollTo-min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#servicos").click(function () {
-                $(document).scrollTo({ top: 304, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
-            });
+            //$("#servicos").click(function () {
+            //    $(document).scrollTo({ top: 304, left: 0 }, { duration: 500 }, { easing: "easeInQuad" }, { queue: true });
+            //});    
+    /*
+        EXAMPLE ONE
+    */
+	var $el, leftPos, newWidth;
+    
+   
+    /* Cache it */
+    var $magicLine = $("#magic-line");
+    var pLeft = ($(".current_page_item a").position().left + (($(".current_page_item a").width()/2)-10));
+    $magicLine
+        .css("left",pLeft )
+        .data("origLeft", $magicLine.position().left);
+        
+    $("#header ul li").find("a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left + (($el.width()/2)-10) ;
+        
+        $magicLine.stop().animate({
+            left: leftPos,
+        });
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft")
+        });    
+    });
+    
+			
            
         });
 
@@ -22,35 +49,47 @@
 <body>
 <div id="tudo">
 	<div id="conteudo">
-        <div class="header">  
-            <div class="logo-menu"> <img alt="logo" src="images/logo-megageo.png" /> </div>
-            <div class="menu-item">
-            	<span class="menu-text">empresa </span></div>
-            <div class="menu-item">
-            	<span class="menu-text">obras </span></div>
-            <div class="menu-item">	
-            	<span class="menu-text">faq </span></div>
-            <div class="menu-item">	
-            	<span class="menu-text">clientes </span></div>
-            <div class="menu-item">
-            	<span class="menu-text">contato </span></div>
+        <div id="header"> 
+        	<div id="contentHeader">
+            	<a href="index.html">
+                	<div class="logo"></div>
+                </a>
+                <div class="menu">
+                <ul>
+                	<!--<li><a href="#" class="linkhome"></a></li>-->
+                    <li class="current_page_item"><a href="#">empresa</a></li>
+                    <li><a href="#">obras</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">clientes</a></li>
+                    <li><a href="#">contato</a></li>
+                    <li id="magic-line"></li>
+                </ul>
+                </div>
+                <!--<div class="logo-menu">  </div>
+                <div class="menu-item">
+                    <span class="menu-text">empresa </span></div>
+                <div class="menu-item">
+                    <span class="menu-text">obras </span></div>
+                <div class="menu-item">	
+                    <span class="menu-text">faq </span></div>
+                <div class="menu-item">	
+                    <span class="menu-text">clientes </span></div>
+                <div class="menu-item">
+                    <span class="menu-text">contato </span></div>-->
+            </div>
         </div>
         <!-- fim header -->
-        <div class="fit-logo bg-tudo">
+        <!--<div class="fit-logo bg-tudo">
       		<div class="left"><img alt="null" src="images/esquerda-seta.png" /> </div>      		
             <div class="left fill"><img alt="null" src="images/direita-seta.png" />  </div>
             <div class="left complete"></div>
             <div class="left continuaseta" ><img alt="null" src="images/continua-direita-seta.png" />   </div>
             <div class="left complete-rest"></div>
-        </div>
+        </div>-->
 	 
         <!-- Inicio Section 1 Empresa -->
-            
-     
-
-
-
- <div id="empresaholder" class="section1">
+           
+ 			<!--<div id="empresaholder" class="section1">
           
                        <div class="texto empresa-color bold empresa-align">
                     EMPRESA
@@ -69,8 +108,8 @@
         
                    </div>
       </div>
-       <!-- Fim Section 1 Empresa -->
-       <!-- INICIO Section 2 Equipamentos -->
+       <!-- Fim Section 1 Empresa
+       <!-- INICIO Section 2 Equipamentos 
       <div id="empresaHolder" class="section2">
 	    <div class="texto empresa-color bold empresa-align">
 	     EMPRESA
@@ -86,8 +125,8 @@
        	</div>
        </div>
       </div>
-      <!-- fim Section 2 Equipamentos -->
-      <!-- Inicio Section 3 Obras -->
+      <!-- fim Section 2 Equipamentos 
+      <!-- Inicio Section 3 Obras 
       <div id="obrasHolder" class="section2 espacoHeader"> 
       	<div id="setaObras">
         	<div class="inicioSetaObras texto size10 bold"> OBRAS</div>
@@ -100,8 +139,8 @@
             <img alt="foto da obra" src="images/foto-obra.png" class="obraSpacing"/>
         </div>
       </div>
-      <!-- Fim Section 3 Obras -->
-      <!-- Inicio Section 4 FAQ -->
+      <!-- Fim Section 3 Obras 
+      <!-- Inicio Section 4 FAQ -
       <div id="FAQHolder" class="section2 ">
       	<div id="setaFAQ">
         	<div class="inicioSetaFAQ texto size10 bold"> FAQ</div>
@@ -156,8 +195,8 @@
          </div>
         
       </div>
-      <!-- Fim Section 4 FAQ -->
-      <!-- Inicio Section 5 Clientes -->
+      <!-- Fim Section 4 FAQ 
+      <!-- Inicio Section 5 Clientes 
        <div id="ClienteHolder" class="section2 ">
 	       <div id="setaCliente">
         	<div class="inicioSetaCliente texto size10 bold"> CLIENTES</div>
@@ -182,7 +221,6 @@
       <!-- Fim Section 6 Contato -->
        <div id="footer" class="footer">
       </div>
-     
      
    	</div><!-- fim conteudo -->
    
