@@ -27,7 +27,7 @@ body
 
 label{
 	color:#969494;
-	font-size:12pt;
+	font-size:10pt;
 	font-weight:600;
 }
 
@@ -206,8 +206,12 @@ padding:5px 0px 5px 0px;
 	border-left-color:#e77843 !important;
 }
 
+#boxEquipamentos .content a{
+	margin-right:7px;
+}
+
 #boxEquipamentos .content img{
-	margin-right:14px;
+	/*margin-right:14px;*/
 }
 #boxEquipamentos .content img:last-child{
 	margin-right:0px;
@@ -215,10 +219,14 @@ padding:5px 0px 5px 0px;
 
 #boxEmpresa .content div{
 	background:#ececec;
-	font-size:12pt;
+	font-size:10pt;
 	color:#6a6a69;
 	padding:16px;
 	display:table;
+}
+
+#boxEmpresa .content div p{
+	line-height:16px;
 }
 /* @End Box Empresa/Equipamentos Style*/
 
@@ -290,7 +298,9 @@ padding:5px 0px 5px 0px;
 #boxClientes ul li{
 	display:block;
 	color:#6e6e6e;
-	font-size:13pt;
+	font-size:10pt;
+	line-height:21px;
+	font-weight:600;
 }
 /* @End Box Clientes Style*/
 
@@ -430,13 +440,12 @@ background:#d9d6d4;
 font-size:10pt;
 padding:5px 16px 5px 16px;
 color:#474747;
-font-weight:600;
 display:table;
 cursor:pointer;
 }
 
 .accordionContent{
-	font-size:10pt;
+	font-size:9pt;
 padding:5px 16px 5px 16px;
 color:#474747;
 }
@@ -567,4 +576,12 @@ width: 358px;
 	width:18px;
 	height: 18px;
 	right: 0px;
+}
+
+.tituloContato10pt{
+	font-size:10pt !important;
+}
+
+.tituloContato11pt{
+	font-size:11pt !important;
 }
