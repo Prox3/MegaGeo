@@ -13,7 +13,13 @@ $(document).ready(function () {
 
 function prettyPhoto(){
 	$("a[rel^='prettyPhoto[Equipamentos]']").prettyPhoto({ social_tools:'' });
+	$("a[rel^='prettyPhoto[Equipamentos1]']").prettyPhoto({ social_tools:'' });
+	$("a[rel^='prettyPhoto[Equipamentos2]']").prettyPhoto({ social_tools:'' });
+	
 	$("a[rel^='prettyPhoto[Obras]']").prettyPhoto({ social_tools:'' });
+	$("a[rel^='prettyPhoto[Obras1]']").prettyPhoto({ social_tools:'' });
+	$("a[rel^='prettyPhoto[Obras2]']").prettyPhoto({ social_tools:'' });
+	$("a[rel^='prettyPhoto[Obras3]']").prettyPhoto({ social_tools:'' });
 }
 
 function enviarOrcamento(){
