@@ -3,7 +3,7 @@
 	  $keywords = 'engenharia, fundacoes, bate estaca, obras';
 	  $organization = 'MegaGeo';
  ?>
-<?php require("Header.php")?>
+<?php require("header.php")?>
 <div id="content-home">
 	<div class="content-home-absolute"></div>
     <div id="banner-rotativo">
@@ -99,4 +99,4 @@
         </a>
     </div>
 </div>
-<?php require("Footer.php")?>
+<?php require("footer.php")?>

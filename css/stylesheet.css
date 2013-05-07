@@ -272,8 +272,12 @@ ul li {
 	height:180px;
 	width:290px;
 	box-shadow: 15px 0px 16px -15px #000;
-	margin-right:10px;
+	margin-right:15px;
 	margin-top: 25px;
+}
+
+#link-uteis-home .box-link-uteis:last-child{
+	margin-right:0px;
 }
 
 #link-uteis-home .box-link-uteis:last-child{

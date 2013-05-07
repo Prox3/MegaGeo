@@ -38,7 +38,7 @@
                 	<div class="contentHeader-absolute"></div>
                     <div id="logo">
                     	<div class="logo box-shadow">
-                        	<a href="Index.php" target="_self">
+                        	<a href="index.php" target="_self">
                         		<img src="images/logo.png" alt="MegaGeo" width="187" height="141" />
                             </a>
 						</div> 
