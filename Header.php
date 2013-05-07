@@ -3,6 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title><?php echo $title ?></title>
+    <meta name="description" content="<?php echo $description ?>" />
+    <meta name="keywords" content="<?php echo $keywords ?>">
+    <meta name="organization name" content="<?php echo $organization ?>" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="language" content="portuguese" />
+    <meta name="location" content="Brazil" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="mssmarttagspreventparsing" content="true" />
+    <meta http-equiv="imagetoolbar" content="no" />
+
+    
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <script type="text/javascript" src="js/script.min.js"></script>
 </head>

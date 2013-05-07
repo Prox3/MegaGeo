@@ -1,4 +1,8 @@
-<?php $title = 'MegaGeo' ?>
+<?php $title = 'MegaGeo';
+	  $description = 'Com equipamentos modernos aliados a um com corpo técnico especializado, a MegaGeo está altamente capacitada para trabalhos de fundação.';
+	  $keywords = 'engenharia, fundacoes, bate estaca, obras';
+	  $organization = 'MegaGeo';
+ ?>
 <?php require("Header.php")?>
 <div id="content-home">
 	<div class="content-home-absolute"></div>
