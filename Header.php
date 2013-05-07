@@ -19,6 +19,13 @@
     <link rel="stylesheet" type="text/css" href="css/s3Slider.css"/>
     <script type="text/javascript" src="js/script.min.js"></script>
     <script type="text/javascript" src="js/s3Slider.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('#slider0').s3Slider({
+				timeOut: 3000
+			});
+		});
+	</script>
 </head>
 <body>
     <div id="tudo">

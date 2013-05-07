@@ -4,13 +4,6 @@
 	  $organization = 'MegaGeo';
  ?>
 <?php require("Header.php")?>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#slider0').s3Slider({
-		timeOut: 3000
-	});
-});
-</script>
 <div id="content-home">
 	<div class="content-home-absolute"></div>
     <div id="banner-rotativo">
