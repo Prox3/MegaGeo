@@ -49,6 +49,13 @@ ul li {
 	display:inline;
 }
 
+input[type=text] {
+	border: 0px;
+	padding: 5px;
+	outline: none;
+	margin-bottom:15px;
+}
+
 /* Header Style*/
 #header
 {
@@ -144,13 +151,16 @@ ul li {
 
 #contentHeader #menu ul{
 	display:table;
-	margin-left: 15px;
-	width: 435px;
+	margin-left: 87px;
+	width: 363px;
+	/*margin-left: 15px;
+	width: 435px;*/
 }
 
 #contentHeader #menu ul li{
 	display:inline-block;
-	margin: 0px 2px 0px 2px;
+	/*margin: 0px 2px 0px 2px;*/
+	margin:0px 0px 0px 4px;
 }
 
 #contentHeader #menu ul li a{
@@ -425,4 +435,109 @@ ul li {
 	height:inherit;
 	vertical-align:middle;
 	width:inherit;
+}
+
+.leftBox{
+	float:left;
+}
+
+.rightBox{
+	float:right;
+}
+
+.paddingOrcamento{
+	padding:10px 55px 10px 55px;
+}
+
+.ui-datepicker {
+	font-size: 11px !important;
+}
+
+.ui-tooltip{
+padding:0px !important;
+}
+
+.backLightbox{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ededed;
+opacity: .6;
+z-index: 21000;
+display: none;
+}
+
+.boxFlutuante {
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left:-179px;
+margin-top:-63px;
+z-index: 22003;
+box-shadow: 0px 0px 35px -10px #000;
+}
+
+.loading {
+position: fixed;
+top: 50%;
+left: 50%;
+width:32px;
+height:32px;
+margin-left:-16px;
+margin-top:-16px;
+z-index: 22003;
+box-shadow: 0px 0px 35px -10px #000;
+display:none;
+}
+
+#boxSucessoEnvio, #boxErrorEnvio{
+display: none;
+height: 126px;
+width: 358px;
+}
+
+#boxSucessoEnvio div, #boxErrorEnvio div{
+	display:table;
+	height:63px;
+	width:inherit;
+}
+
+#boxSucessoEnvio p, #boxErrorEnvio p{
+	color:#fff;
+	text-align:center;
+}
+
+#boxSucessoEnvio .titulo{
+	background:#721116 url(../images/checkedForm.png) no-repeat 25px 20px;
+	text-transform:uppercase;
+	font-weight:600;
+	font-size: 8pt;
+}
+
+#boxErrorEnvio .titulo{
+	background:#721116 url(../images/errorEnvio.png) no-repeat 90px 20px;
+	text-transform:uppercase;
+	font-weight:600;
+	font-size: 8pt;
+}
+
+#boxSucessoEnvio .content, #boxErrorEnvio .content{
+	background:#991c22;
+	font-size: 11px;
+}
+
+#boxSucessoEnvio .close, #boxErrorEnvio .close{
+	cursor:pointer;
+	position:absolute;
+	width:18px;
+	height: 18px;
+	right: 0px;
+}
+
+.verticalAlign63px{
+	display:table-cell;
+	height:63px;
+	vertical-align:middle;
 }

@@ -2,6 +2,7 @@
 	  $description = 'Com equipamentos modernos aliados a um com corpo técnico especializado, a MegaGeo está altamente capacitada para trabalhos de fundação.';
 	  $keywords = 'engenharia, fundacoes, bate estaca, obras';
 	  $organization = 'MegaGeo';
+	  $activeMenu = '#home';
  ?>
 <?php require("header.php")?>
 <div id="content-home">
@@ -53,7 +54,7 @@
             Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
             </p>
         </div>
-        <a href="#" target="_self">
+        <a href="empresa.php" target="_self">
             <div id="link-empresa-a">
             </div>
         </a>
@@ -73,7 +74,7 @@
             Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
             </p>
         </div>
-        <a href="#" target="_self">
+        <a href="obras.php" target="_self">
             <div id="link-obras-a">
             </div>
         </a>
@@ -93,10 +94,15 @@
             Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
             </p>
         </div>
-        <a href="#" target="_self">
+        <a href="orcamentos.php" target="_self">
             <div id="link-orcamento-a">
             </div>
         </a>
     </div>
 </div>
+<script type="text/javascript">
+$('#slider0').s3Slider({
+	timeOut: 3000
+});
+</script>
 <?php require("footer.php")?>
