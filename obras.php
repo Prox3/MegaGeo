@@ -2,6 +2,7 @@
 	  $description = 'Com equipamentos modernos aliados a um com corpo técnico especializado, a MegaGeo está altamente capacitada para trabalhos de fundação.';
 	  $keywords = 'engenharia, fundacoes, bate estaca, obras';
 	  $organization = 'MegaGeo';
+	  $activeMenu = '#obras';
  ?>
 <?php require("header.php")?>
 <style type="text/css">

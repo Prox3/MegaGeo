@@ -64,7 +64,7 @@
                     <div id="menu">
                         <ul>
                             <li><a id="home" href="index.php" target="_self">home</a></li>
-                            <li><a id="empresa" href="empresa.php" target="_self">empresa</a></li>
+                            <li><a id="empresas" href="empresas.php" target="_self">empresa</a></li>
                             <li><a id="obras" href="obras.php" target="_self">obras</a></li>
                             <li><a id="clientes" href="clientes.php" target="_self">clientes</a></li>
                             <li><a id="orcamentos" href="orcamentos.php" target="_self">orçamentos</a></li>
