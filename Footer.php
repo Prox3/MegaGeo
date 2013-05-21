@@ -12,10 +12,10 @@
                 </div>
                 <div id="footer-direitos">
                 	<div class="footer-direitos-absolute" style="height:71px"></div>
-                    <div class="footer-direitos-content">
+                    <div class="footer-direitos-content" style="height:43px">
                     	<p class="verticalAlign">Megageo ©Todos os direitos reservados</p>
                     </div>
-                    <div class="footer-direitos-content">
+                    <div class="footer-direitos-content" style="height:0px">
                     	<p class="verticalAlign"><a target="_blank" href="//prox3.com.br" style="color:#44842b !important">Prox3</p>
                     </div>
                 </div>
