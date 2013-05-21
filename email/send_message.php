@@ -15,14 +15,7 @@
 	$diametro = $_POST['diametro'];
 	$profundidade = $_POST['profundidade'];
 	$previsao = $_POST['previsao'];
-	$arquivo = $_FILES["image_event"];
 	//Fim Variaveis para envio
-	
-	$fp = fopen($arquivo["tmp_name"], "rb"); //abri o arquivo enviado
-	$anexo = fread($fp, filesize($arquivo["tmp_name"])); //pega sua largura
-	$anexo = base64_encode($anexo); //codifica para base 64
-	fclose($fp); //fecha a conexão
-	
 	
 	$body = '<h1>Solicitação de Orçamento</h1>';
 	$body .='<br/>';
@@ -40,14 +33,13 @@
 	$body .='<br/>';
 	$body .='<p><b>Previsão de Início</b></p>';
 	$body .='<p>'. $previsao .'</p>';
-	//Anexo
- 	$body .= "Content-Type: ".$arquivo["type"]."; name=".$arquivo['name']." n";
- 	$body .= "Content-Transfer-Encoding: base64 n";
- 	$body .= "Content-Disposition: attachment; filename=".$arquivo['name']." rn";
- 	$body .= "$anexo n";
- 	$body .= "--$boundary n";
 	
-	
+	if (isset($_FILES['image_event']) &&
+		$_FILES['image_event']['error'] == UPLOAD_ERR_OK) {
+		$mail->AddAttachment($_FILES['image_event']['tmp_name'],
+							 $_FILES['image_event']['name']);
+	}
+		
 	$mail->IsSMTP(); // telling the class to use SMTP
 	$mail->Host       = "smtp.gmail.com"; // SMTP server
 	$mail->SMTPAuth   = true;                  // enable SMTP authentication
@@ -55,7 +47,7 @@
 	$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 	$mail->Port       = 465;                   // set the SMTP port for the GMAIL server
 	$mail->Username   = "contato@prox3.com.br";  // GMAIL username
-	$mail->Password   = "Cont3Prox";            // GMAIL password
+	$mail->Password   = "Contato112233Prox3";            // GMAIL password
 	
 	$mail->SetFrom('contato@prox3.com.br', 'PROX3');
 	

@@ -67,7 +67,7 @@
                             <li><a id="empresas" href="empresas.php" target="_self">empresa</a></li>
                             <li><a id="obras" href="obras.php" target="_self">obras</a></li>
                             <li><a id="clientes" href="clientes.php" target="_self">clientes</a></li>
-                            <li><a id="orcamentos" href="orcamentos.php" target="_self">orçamentos</a></li>
+                            <li><a id="orcamentos" href="orcamentos.php" target="_self">orçamento</a></li>
                         </ul>
                     </div>
                 </div>
