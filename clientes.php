@@ -5,14 +5,6 @@
 	  $activeMenu = '#clientes';
  ?>
 <?php require("header.php")?>
-<style type="text/css">
-	#banner-obras{width:897px; height:146px; border:solid 4px #000; margin-bottom:28px}
-	.title_page{width:100%; height:19px; float:left; font-size:20px; color:#e77843; letter-spacing:1px; margin-bottom:17px}
-	.arrow_page{width: 0; height: 0; border-right-width: 7px; border-top: 7px solid transparent; border-left: 7px solid transparent; border-bottom-width: 7px; float: left;margin-right: 5px; margin-top: 4px; border-right-color: #e77843; border-style: solid; border-bottom-color: #e77843;}
-	.box_clients{padding:22px 0 22px 27px; margin:0; float:left; background:#d4d4d4; width:400px; height:134px; list-style-type:circle !important; list-style:circle; margin-bottom:26px}
-	.box_clients li{font-size:12px; color:#707070; width:100%; float: left; list-style:circle; margin-bottom:20px; list-style-type:circle !important; list-style:circle}
-	.margin-0{margin:0 !important}
-</style>
 <div id="content-home">
 	<div class="content-home-absolute" style="background:#e8e8e8"></div>
     <div id="banner-obras">

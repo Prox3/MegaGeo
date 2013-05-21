@@ -5,17 +5,6 @@
 	  $activeMenu = '#obras';
  ?>
 <?php require("header.php")?>
-<style type="text/css">
-	#banner-obras{width:897px; height:146px; border:solid 4px #000; margin-bottom:28px}
-	.title_page{width:100%; height:19px; float:left; font-size:20px; color:#e77843; letter-spacing:1px; margin-bottom:17px}
-	.arrow_page{width: 0; height: 0; border-right-width: 7px; border-top: 7px solid transparent; border-left: 7px solid transparent; border-bottom-width: 7px; float: left;margin-right: 5px; margin-top: 4px; border-right-color: #e77843; border-style: solid; border-bottom-color: #e77843;}
-	.box_obras{width:272px; height:96px; background:#d4d2d2; padding:5px; float:left; margin:0 0 26px 29px}
-	.box_obras img{width:101px; height:92px; border:solid 2px #000; float:left; display:block}
-	.box_title_obras{float:left; padding:5px 20px 4px 7px; background:#bababa; text-transform:uppercase; font-size:12px; margin:5px 0 6px 5px}
-	.box_local_obras{width:160px; height:auto; font-size:11px; margin:0 0 6px 5px; float:left}
-	.caracteristicas_obras{text-align:justify}
-	.margin-0{margin:0}
-</style>
 <div id="content-home">
 	<div class="content-home-absolute" style="background:#e8e8e8"></div>
     <div id="banner-obras">
