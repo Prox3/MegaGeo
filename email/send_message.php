@@ -4,31 +4,37 @@
 	ini_set("memory_limit","50M");
 	set_time_limit(0);
 	
-	$imagem		= isset( $_FILES['image_event'] ) ? $_FILES['image_event'] : NULL;
-	$imagesize = getimagesize( $imagem['tmp_name'] );
-	
-	$today = date("YmdHis");
-	$uploads_dir = '../anexo/';
-	$extensao = pathinfo($imagem['name'], PATHINFO_EXTENSION);
-	$imagem['name'] = "aquivo_".$today.".".$extensao;
-	$nome_arquivo = "aquivo_".$today.".".$extensao;
-	
-	move_uploaded_file( $imagem['tmp_name'], $uploads_dir.$imagem['name'] );
-	
 	################################################ E-mail para ADM's ##########################################################################		
 	$mail = new PHPMailer();
 	
 	//Variaveis para envio
-	$nome = $_POST['nome'];
-	$empresa = $_POST['empresa'];
-	$telefone = $_POST['telefone'];
-	$email = $_POST['email'];
-	$local = $_POST['local'];
-	$tipoObra = $_POST['tipoObra'];
-	$qtd = $_POST['qtd'];
-	$diametro = $_POST['diametro'];
-	$profundidade = $_POST['profundidade'];
-	$previsao = $_POST['previsao'];
+	$nome = $_POST['txtNome'];
+	$empresa = $_POST['txtEmpresa'];
+	$telefone = $_POST['txtTelefone'];
+	$email = $_POST['txtEmail'];
+	$local = $_POST['txtLocalObra'];
+	$tipoObra = $_POST['txtTipoObra'];
+	$qtd = $_POST['txtQtdEstacas'];
+	$diametro = $_POST['txtDiametroEstacas'];
+	$profundidade = $_POST['txtProfundidadeEstacas'];
+	$previsao = $_POST['txtPrevisao'];
+	$arqError = 1;
+	
+	// O nome original do arquivo no computador do usuário
+	$arqName = $_FILES['image_event']['name'];
+	// O tipo mime do arquivo. Um exemplo pode ser "image/gif"
+	$arqType = $_FILES['image_event']['type'];
+	// O tamanho, em bytes, do arquivo
+	$arqSize = $_FILES['image_event']['size'];
+	// O nome temporário do arquivo, como foi guardado no servidor
+	$arqTemp = $_FILES['image_event']['tmp_name'];
+	// O código de erro associado a este upload de arquivo
+	$arqError = $_FILES['image_event']['error'];
+	if ($arqError == 0 && isset($arqName)) {
+		$pasta = '../anexo/';
+		$upload = move_uploaded_file($arqTemp, $pasta . $arqName);
+	}
+	
 	//Fim Variaveis para envio
 	
 	$body = '<h1>Solicitação de Orçamento</h1>';
@@ -56,7 +62,6 @@
 	$mail->Port       = 465;                   // set the SMTP port for the GMAIL server
 	$mail->Username   = "contato@prox3.com.br";  // GMAIL username
 	$mail->Password   = "Contato112233Prox3";            // GMAIL password
-	$mail->AddAttachment("../anexo/".$nome_arquivo."");
 	
 	$mail->SetFrom('contato@prox3.com.br', 'PROX3');
 	
@@ -72,10 +77,15 @@
 	$mail->MsgHTML($body);
 	
 	$mail->AddAddress('contato@prox3.com.br','PROX3');
-
+	if ($arqError == 0 && isset($arqName)) {
+		$mail->AddAttachment('../anexo/'. $arqName );// attachment
+	}
 	if(!$mail->Send()) {
 		echo "error";
 	} else {
 		echo "ok";
+	}
+	if ($arqError == 0 && isset($arqName)) {
+		unlink('../anexo/'. $arqName );
 	}
 ?>

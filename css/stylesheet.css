@@ -81,8 +81,8 @@ input[type=text] { border: 0px; padding: 5px; outline: none; margin-bottom:15px;
 .dadosForm .telEmail input[type=text]{width:360px;}
 .dadosForm .estacas input[type=text]{width:40px;}
 .dadosForm .prevEnviar input[type=text]{width:200px;}
-#div-input-file{ margin-top: 10px; background:url(../images/input-file.png) no-repeat; height:24px; width:114px;}
-#div-input-file #image_event{opacity: 0.0; -moz-opacity: 0.0; filter: alpha(opacity=00); font-size:18px;}
+#div-input-file{ cursor:pointer; margin-top: 10px; background:url(../images/input-file.png) no-repeat; height:24px; width:114px;}
+#div-input-file #image_event{cursor:pointer;opacity: 0.0; -moz-opacity: 0.0; filter: alpha(opacity=00); font-size:18px;}
 #div-input-falso{display: table; background: transparent; width: 500px;margin:-32px 0 0 120px}
 #div-input-falso #file_falso{width:inherit; height:24px; font-size:11px; background:transparent; color:#3e3e3e;}
 /* @End Box Formulario Orçamento*/

@@ -7,12 +7,28 @@ $(document).ready(function () {
 });
 
 function enviarOrcamento(){
+	$('form').ajaxForm({
+        beforeSubmit: function() {
+            $(".backLightbox, .loading").show();
+        },
+        success: function(data) {
+			$(".loading").hide();
+			if(data == 'ok'){
+				$('#form1').reset();
+				abrirModalSucesso();
+			}
+			else{
+				abrirModalError();
+			}
+        }
+	});
+	
 	$("#txtEnviar").click(function(){
 		if (!$('#form1').valid()) {
             return;
         }
-		
-		var form = $('#form1');
+		$('#form1').submit();
+		/*var form = $('#form1');
 		var nome = form.find('#txtNome')
 		var empresa = form.find('#txtEmpresa');
 		var telefone = form.find('#txtTelefone');
@@ -23,6 +39,7 @@ function enviarOrcamento(){
 		var diametro = form.find('#txtDiametroEstacas');
 		var profundidade = form.find('#txtProfundidadeEstacas');
 		var previsao = form.find('#txtPrevisao');
+		var arquivo = form.find('#image_event');
 		
 		$.ajax({
 			url: 'email/send_message.php',
@@ -36,7 +53,8 @@ function enviarOrcamento(){
 					qtd: qtd.val(), 
 					diametro: diametro.val(), 
 					profundidade: profundidade.val(), 
-					previsao: previsao.val()
+					previsao: previsao.val(),
+					arquivo: arquivo.val()
 					},
 			beforeSend:function(){
 				$(".backLightbox, .loading").show();
@@ -55,7 +73,7 @@ function enviarOrcamento(){
 			error:function(jqXHR, textStatus, errorThrown ){
 				alert(textStatus);
 			}
-		});
+		});*/
 	});
 	
 	$("#boxSucessoEnvio .close").click(function(){
