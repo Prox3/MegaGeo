@@ -47,7 +47,7 @@
             Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
             </p>
         </div>
-        <a href="<?=$urlAbsoluta?>empresas" target="_self">
+        <a href="<?=$urlAbsoluta?>Empresas" target="_self">
             <div id="link-empresa-a">
             </div>
         </a>
@@ -67,7 +67,7 @@
             Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
             </p>
         </div>
-        <a href="<?=$urlAbsoluta?>obras" target="_self">
+        <a href="<?=$urlAbsoluta?>Obras" target="_self">
             <div id="link-obras-a">
             </div>
         </a>
@@ -87,7 +87,7 @@
             Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
             </p>
         </div>
-        <a href="<?=$urlAbsoluta?>orcamento" target="_self">
+        <a href="<?=$urlAbsoluta?>Orcamento" target="_self">
             <div id="link-orcamento-a">
             </div>
         </a>

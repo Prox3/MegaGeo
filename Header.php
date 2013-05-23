@@ -43,7 +43,7 @@
                 	<div class="contentHeader-absolute"></div>
                     <div id="logo">
                     	<div class="logo box-shadow">
-                        	<a href="<?=$urlAbsoluta?>home" target="_self">
+                        	<a href="<?=$urlAbsoluta?>Home" target="_self">
                         		<img src="images/logo.png" alt="MegaGeo" width="187" height="141" />
                             </a>
 						</div> 
@@ -53,11 +53,11 @@
                     </div>
                     <div id="menu">
                         <ul>
-                            <li><a id="home" href="<?=$urlAbsoluta?>home" target="_self">home</a></li>
-                            <li><a id="empresas" href="<?=$urlAbsoluta?>empresas" target="_self">empresa</a></li>
-                            <li><a id="obras" href="<?=$urlAbsoluta?>obras" target="_self">obras</a></li>
-                            <li><a id="clientes" href="<?=$urlAbsoluta?>clientes" target="_self">clientes</a></li>
-                            <li><a id="orcamentos" href="<?=$urlAbsoluta?>orcamento" target="_self">orçamento</a></li>
+                            <li><a id="home" href="<?=$urlAbsoluta?>Home" target="_self">home</a></li>
+                            <li><a id="empresas" href="<?=$urlAbsoluta?>Empresas" target="_self">empresa</a></li>
+                            <li><a id="obras" href="<?=$urlAbsoluta?>Obras" target="_self">obras</a></li>
+                            <li><a id="clientes" href="<?=$urlAbsoluta?>Clientes" target="_self">clientes</a></li>
+                            <li><a id="orcamentos" href="<?=$urlAbsoluta?>Orcamento" target="_self">orçamento</a></li>
                         </ul>
                     </div>
                 </div>

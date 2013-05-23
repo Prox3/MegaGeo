@@ -11,7 +11,7 @@ include("header.php");
 $_SERVER["REQUEST_URI"];
 $parte1 = strrchr($_SERVER["REQUEST_URI"],"?");
 $parte2 = str_replace($parte1,"", $_SERVER["REQUEST_URI"]);
-$url = explode("/", $parte2);
+$url = explode("/", strtolower($parte2));
 
 array_shift($url);
 if(!empty($url[2])){
