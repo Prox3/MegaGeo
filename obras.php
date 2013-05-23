@@ -1,10 +1,4 @@
-<?php $title = 'MegaGeo';
-	  $description = 'Com equipamentos modernos aliados a um com corpo técnico especializado, a MegaGeo está altamente capacitada para trabalhos de fundação.';
-	  $keywords = 'engenharia, fundacoes, bate estaca, obras';
-	  $organization = 'MegaGeo';
-	  $activeMenu = '#obras';
- ?>
-<?php require("header.php")?>
+<?php $activeMenu = '#obras'; ?>
 <div id="content-home">
 	<div class="content-home-absolute" style="background:#e8e8e8"></div>
     <div id="banner-obras">
@@ -68,4 +62,3 @@
       </div>
     </div>
 </div>
-<?php require("footer.php")?>

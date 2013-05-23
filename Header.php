@@ -15,31 +15,21 @@
     <meta http-equiv="imagetoolbar" content="no" />
 
     
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-     <link rel="Stylesheet" type="text/css" href="css/jquery.qtip.css" />
-    <link rel="Stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.10.2.custom.css" />
-    <link rel="stylesheet" type="text/css" href="css/s3Slider.css"/>
+    <link rel="stylesheet" type="text/css" href="<?=$urlAbsoluta?>css/stylesheet.css">
+     <link rel="Stylesheet" type="text/css" href="<?=$urlAbsoluta?>css/jquery.qtip.css" />
+    <link rel="Stylesheet" type="text/css" href="<?=$urlAbsoluta?>css/smoothness/jquery-ui-1.10.2.custom.css" />
+    <link rel="stylesheet" type="text/css" href="<?=$urlAbsoluta?>css/s3Slider.css"/>
     
-    <script type="text/javascript" src="js/script.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/script.min.js"></script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/jquery-ui.js"></script>
     
-    <script type="text/javascript" src="js/jquery.qtip.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/jquery.alphanumeric.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
-    <script type="text/javascript" src="js/Commons/common.js"></script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/jquery.qtip.js"></script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/jquery.validate.js"></script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/jquery.alphanumeric.js"></script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/Commons/common.js"></script>
     
-    <script type="text/javascript" src="js/s3Slider.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function(){
-			$("#menu > ul > li > a").removeClass("active");
-			var active = "<?php echo $activeMenu;?>";
-			if(active == null || active == "")
-				$("#home").addClass("active");
-			else
-				$(active).addClass("active");
-		});
-	</script>
+    <script type="text/javascript" src="<?=$urlAbsoluta?>js/s3Slider.js"></script>
 </head>
 <body>
 	<div class="backLightbox"></div>
@@ -53,7 +43,7 @@
                 	<div class="contentHeader-absolute"></div>
                     <div id="logo">
                     	<div class="logo box-shadow">
-                        	<a href="index.php" target="_self">
+                        	<a href="<?=$urlAbsoluta?>home" target="_self">
                         		<img src="images/logo.png" alt="MegaGeo" width="187" height="141" />
                             </a>
 						</div> 
@@ -63,11 +53,11 @@
                     </div>
                     <div id="menu">
                         <ul>
-                            <li><a id="home" href="index.php" target="_self">home</a></li>
-                            <li><a id="empresas" href="empresas.php" target="_self">empresa</a></li>
-                            <li><a id="obras" href="obras.php" target="_self">obras</a></li>
-                            <li><a id="clientes" href="clientes.php" target="_self">clientes</a></li>
-                            <li><a id="orcamentos" href="orcamento.php" target="_self">orçamento</a></li>
+                            <li><a id="home" href="<?=$urlAbsoluta?>home" target="_self">home</a></li>
+                            <li><a id="empresas" href="<?=$urlAbsoluta?>empresas" target="_self">empresa</a></li>
+                            <li><a id="obras" href="<?=$urlAbsoluta?>obras" target="_self">obras</a></li>
+                            <li><a id="clientes" href="<?=$urlAbsoluta?>clientes" target="_self">clientes</a></li>
+                            <li><a id="orcamentos" href="<?=$urlAbsoluta?>orcamento" target="_self">orçamento</a></li>
                         </ul>
                     </div>
                 </div>

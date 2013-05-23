@@ -1,13 +1,7 @@
-<?php $title = 'MegaGeo';
-	  $description = 'Com equipamentos modernos aliados a um com corpo técnico especializado, a MegaGeo está altamente capacitada para trabalhos de fundação.';
-	  $keywords = 'engenharia, fundacoes, bate estaca, obras';
-	  $organization = 'MegaGeo';
-	  $activeMenu = '#orcamentos';
- ?>
-<?php require("header.php")?>
-<script type="text/javascript" src="js/jquery.validate.js"></script>
-<script type="text/javascript" src="js/ViewModels/indexViewModel.js"></script>
-<script type="text/javascript" src="js/Commons/jquery.form.js"></script>
+<?php $activeMenu = '#orcamentos'; ?>
+<script type="text/javascript" src="<?=$urlAbsoluta?>js/jquery.validate.js"></script>
+<script type="text/javascript" src="<?=$urlAbsoluta?>js/ViewModels/indexViewModel.js"></script>
+<script type="text/javascript" src="<?=$urlAbsoluta?>js/Commons/jquery.form.js"></script>
 <!-- Inicio Section 6 Contato  -->
 <div id="struct-orcamento">
 	<div id="titulo-orcamento">
@@ -108,4 +102,3 @@ $(document).ready(function(){
 })
 </script>
 <!-- Fim Section 6 Contato  -->
-<?php require("footer.php")?>

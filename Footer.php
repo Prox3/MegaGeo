@@ -22,5 +22,15 @@
         	</div>
         </div>        
     </div>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$("#menu > ul > li > a").removeClass("active");
+			var active = "<?php echo $activeMenu;?>";
+			if(active == null || active == "")
+				$("#home").addClass("active");
+			else
+				$(active).addClass("active");
+		});
+	</script>
 </body>
 </html>
