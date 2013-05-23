@@ -18,6 +18,9 @@ if(!empty($url[2])){
 	if(file_exists($url[2].".php")){
 		include($url[2].".php");
 	}
+	else{
+		include("home.php");
+	}
 }
 else{
 	include("home.php");
