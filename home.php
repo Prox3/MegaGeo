@@ -40,11 +40,11 @@
             </div>
         </div>
         <div class="content-link-uteis">
-        	<p class="titulo">
+        	<!--<p class="titulo">
             	Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
-            </p>
+            </p>-->
             <p class="content">
-            Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. Perfuração de estacas de diâmetro 30 cm à 80 cm com 21 metros de profundidade. 
+            A <font color="#fafafa">MEGAGEO</font> é uma empresa do grupo <font color="#fafafa">JL ENGENHARIA DE FUNDAÇÕES E COMÉRCIO</font>, que atua no segmento de estacas hélice contínua monitorada.
             </p>
         </div>
         <a href="<?=$urlAbsoluta?>Empresas" target="_self">
