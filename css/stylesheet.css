@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-*{	margin:0px; padding:0px; font-family:"trebuchet MS", sans-serif;/*"Helvetica Neue", */}
+*{	margin:0px; padding:0px; font-family:Helvetica, "trebuchet MS", sans-serif;/*"Helvetica Neue", */}
 body { margin:0; padding:0; text-align:center; /* hack para o IE */	background: #e8e8e8; }
 img{border:0px;}
 
@@ -25,13 +25,44 @@ input[type=text] { border: 0px; padding: 5px; outline: none; margin-bottom:15px;
 #border-top-header .border-top-header-absolute{background:#e77843;height:6px;left:0;position:absolute;top:0;width:100%;}
 #border-bottom-header .border-bottom-header-absolute{background:#efefef;height:11px;left:0;position:absolute;width:100%;}
 #contentHeader #menu{display:table;height:141px;width:450px;}
-#contentHeader #menu ul{display:table;margin-left: 87px;width: 363px;/*margin-left: 15px;width: 435px;*/}
+#contentHeader #menu ul{display:table;margin-left:-10px;width: 460px;/*margin-left: 15px;width: 435px;*/}
 #contentHeader #menu ul li{display:inline-block;/*margin: 0px 2px 0px 2px;*/margin:0px 0px 0px 4px;}
 #contentHeader #menu ul li a{color:#8a8888;display:table;padding:57px 10px 10px 10px;height:auto;width:34px;font-size:12px;text-transform:uppercase;}
 #contentHeader #menu ul li a:hover{color:#fff;background:#e77843;}
 #contentHeader #menu ul li a.active{color:#fff;	background:#e77843;}
 /* @End Header Style*/
 /*Páginas Internas*/
+/*Páginas Empresas*/
+#struct-empresa{ display:table; height:auto; width:905px; margin-bottom:10px;}
+#content-empresa{ width:550px; float:left; display:table; }
+#mini-banner-empresa{ width:inherit; height:80px; display:table; vertical-align:middle; background:#dedddd; padding:10px; }
+#mini-banner-empresa img{ border:2px solid #cacaca;}
+#mini-banner-empresa p { height:80px; vertical-align:middle; display:table-cell; }
+#mini-banner-empresa p{ font-size:13px; color:#615a5a; }
+#mini-banner-empresa .leftBox{ width:116px;}
+#mini-banner-empresa .rightBox{ width:415px; margin-right: 5px;}
+#mini-banner-empresa p span{ color:#373737;}
+#content-content-empresa{ display:table; height:auto; font-size:12px; color:#686666; width:570px}
+#content-content-empresa p{ margin:8px 0px 8px 0px; text-align:justify;}
+#content-outras-informacao{ float:right; width:300px; display:table; }
+#equipe-tecnica{background:#cfcfcf; height:85px; margin-top:-44px; padding:25px; }
+#equipe-tecnica p.titulo {color:#505050; font-size:12px; text-transform:uppercase; margin-bottom:10px; margin-top: -10px;}
+#equipe-tecnica ul { display:table; float: left; margin-left: 15px; }
+#equipe-tecnica ul li{ list-style-type: inherit !important; display: list-item; color:#727272; font-size:12px;}
+.border-corte{ width: 0; height: 0; border-right: 15px solid #e8e8e8; border-top: 15px solid transparent; border-left: 15px solid transparent; border-bottom: 15px solid #e8e8e8; float: right; }
+#equipe-tecnica .border-corte { margin-right: -25px; margin-top: 68px; }
+#nossos-equipamentos{ height:auto; background:#29445e; margin-top:15px; padding:25px; padding-bottom: 0px; }
+#nossos-equipamentos .titulo{ color:#fff; font-size:12px; text-transform:uppercase; margin-top: -15px; margin-bottom: 7px; }
+#nossos-equipamentos ul{ margin: 0px -25px 0px -25px; width: 300px; color:#fff; font-size:12px; }
+#nossos-equipamentos ul li{ list-style-type: inherit !important; display: list-item; font-weight:bold; margin-left: 10px; }
+#nossos-equipamentos ul div{ padding:15px; }
+#nossos-equipamentos ul div span{ font-style:italic; margin-left: 10px; }
+#nossos-equipamentos ul div p{font-size: 11px; margin-left: 10px;}
+#nossos-equipamentos ul div:nth-child(even){ background:#4a6a88;}
+#nossos-equipamentos ul div:nth-child(odd){ background:#395977;}
+#nossos-equipamentos ul div:last-child{ padding-bottom:25px; }
+#nossos-equipamentos .border-corte { margin-right: -25px; margin-top: -30px; }
+/*Fim Páginas Empresas*/
 /*Páginas Clientes*/
 #banner-obras{width:897px; height:146px; border:solid 4px #000; margin-bottom:28px}
 .title_page{width:100%; height:19px; float:left; font-size:20px; color:#e77843; letter-spacing:1px; margin-bottom:17px}
@@ -115,16 +146,17 @@ input[type=text] { border: 0px; padding: 5px; outline: none; margin-bottom:15px;
 #link-orcamento .arrows-titulo{border-right-color:#e77843;border-style:solid;border-bottom-color:#e77843;}
 #link-empresa .content-link-uteis,#link-obras .content-link-uteis,#link-orcamento .content-link-uteis{display:table;	height:85px;width:242px;padding:20px;}
 #link-empresa .content-link-uteis{background:#838484;}
+.content-link-uteis:hover{opacity:0.6}
 #link-obras .content-link-uteis{background:#282828;}
 #link-orcamento .content-link-uteis{background:#e77843;}
-.content-link-uteis .titulo,.content-link-uteis .content{font-size:11px;}
+.content-link-uteis .titulo,.content-link-uteis .content{font-size:12px; line-height:21px}
 .content-link-uteis .titulo{font-weight:bold;margin-bottom:10px;}
 #link-empresa .content-link-uteis .titulo{color:#e9eaea;}
 #link-obras .content-link-uteis .titulo{color:#a4a4a4;}
 #link-orcamento .content-link-uteis .titulo{color:#ffffff;}
-#link-empresa .content-link-uteis .content{color:#bebebe;}
-#link-obras .content-link-uteis .content{color:#636161;}
-#link-orcamento .content-link-uteis .content{color:#f2bea5;}
+#link-empresa .content-link-uteis .content{color:#bebebe; margin-bottom:9px}
+#link-obras .content-link-uteis .content{color:#636161; margin:13px 0 16px 2px}
+#link-orcamento .content-link-uteis .content{color:#8f3c15; font-size:18px; margin:12px 0 19px 12px}
 #link-empresa #link-empresa-a{background:url(../images/link-empresa.png) no-repeat;display:table;height:31px;width:31px;position: absolute;margin-top: -31px;margin-left: 251px;}
 #link-obras #link-obras-a{background:url(../images/link-obras.png) no-repeat;display:table;height:31px;width:31px;position: absolute;margin-top: -31px;margin-left: 251px;}
 #link-orcamento #link-orcamento-a{background:url(../images/link-orcamentos.png) no-repeat;display:table;height:31px;width:31px;position: absolute;margin-top: -31px;margin-left: 251px;}
@@ -147,3 +179,5 @@ input[type=text] { border: 0px; padding: 5px; outline: none; margin-bottom:15px;
 #boxSucessoEnvio .content, #boxErrorEnvio .content{background:#991c22;font-size: 11px;}
 #boxSucessoEnvio .close, #boxErrorEnvio .close{cursor:pointer;position:absolute;width:18px;	height: 18px;right: 0px;}
 .verticalAlign63px{display:table-cell;height:63px;vertical-align:middle;}
+.more{position:absolute; font-size:17px; color:#838484; margin:-25px 0 0 151px}
+.opacidade{opacity:0.6}
